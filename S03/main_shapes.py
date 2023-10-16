@@ -1,5 +1,5 @@
 import site
-site.addsitedir("/Users/nick/OneDrive - University of the Arts London/S03/")
+site.addsitedir("/Users/nick/GITHUB/codezoners/IU000166_FC1/S03/")
 
 import turtle
 

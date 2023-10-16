@@ -1,4 +1,5 @@
-# Simple shapes library.
+# Simple shapes library. Can't refer to globals, hence: parameter!
+
 def square(t):
     "Square of preset size centred on turtle."
     t.up()
