@@ -1,34 +1,20 @@
-import os
-#print(os.getcwd())
-
-def square(t, size, fill=False, red=False):
+def square(t, size, filled):
+    # Draw a square:
     t.forward(size / 2)
     t.left(90)
     t.down()
+    if filled:
+        t.begin_fill()
+    t.forward(size / 2)
 
-    if red:
-        t.color("red")
-    else:
-        t.color("black")
+    for i in range(3):
+        t.left(90)
+        t.forward(size)
 
-    if fill: t.begin_fill()
-    t.forward(size / 2); t.left(90)
-    t.forward(size); t.left(90)
-    t.forward(size); t.left(90)
-    t.forward(size); t.left(90)
-    t.forward(size / 2); t.right(90)
-    if fill: t.end_fill()
-
+    t.left(90)
+    t.forward(size / 2)
+    t.right(90)
+    if filled:
+        t.end_fill()
     t.up()
     t.forward(-size / 2)
-
-def circle(t):
-    size = 400
-    t.up()
-    t.forward(size / 2)
-    t.left(90)
-    t.down()
-    t.circle(size / 2)
-    t.right(90)
-    t.penup()
-    t.backward(size / 2)
