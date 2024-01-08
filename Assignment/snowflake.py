@@ -5,6 +5,8 @@ import math
 t = turtle.Turtle()
 DIST = 400
 SIZE = 600
+JUMBO = 800
+JDIST = 500
 t.screen.setup(SIZE, SIZE)
 
 # First form only:
@@ -81,3 +83,18 @@ for i in range(3):
 t.end_fill()
 t.hideturtle()
 save_to("snowflake_4")
+
+# Layered, filled version:
+reset(size=(JUMBO, JUMBO))
+teleport(-JDIST / 2, JDIST / 3)
+
+for i in range(5):
+    t.color(["black", "red", "orange", "#808080", "#606060"][i])
+
+    t.begin_fill()
+    for _ in range(3):
+        snowflake(4 - i, JDIST)
+        t.right(120)
+    t.end_fill()
+t.hideturtle()
+save_to("snowflake_layered")
