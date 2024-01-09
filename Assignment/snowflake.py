@@ -89,7 +89,8 @@ reset(size=(JUMBO, JUMBO))
 teleport(-JDIST / 2, JDIST / 3)
 
 for i in range(5):
-    t.color(["black", "red", "orange", "#808080", "#606060"][i])
+    #t.color(["black", "red", "orange", "#808080", "#606060"][i])
+    t.color(["black", "white", "black", "white", "black"][i])
 
     t.begin_fill()
     for _ in range(3):
