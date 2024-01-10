@@ -1,0 +1,56 @@
+$CATEGORY: Basic-Python
+
+::Syntax 1:: Python is sensitive to indentation of statements. {T}
+
+::Syntax 2:: Python statements have to be terminated with a semicolon. {F}
+
+::Syntax 3:: Python statements can be terminated with a semicolon. {T}
+
+::Conditionals:: Which of these keywords can occur in a Python conditional statement?
+{
+    ~%33.33333% <code>if</code>
+    ~%33.33333% <code>else<code>
+    ~%-33.33333% <code>elseif</code>
+    ~%33.33333% <code>elif</code>
+}
+
+$CATEGORY: Turtle-Graphics
+
+::Create Turtle:: After importing the Turtle with the statement <code>import turtle</code>,
+which of these statements will create a turtle object?
+{
+    ~%50% <code>t \= turtle.Turtle()</code>
+    ~%-50% <code>t \= Turtle()</code>
+    ~%-50% <code>t \= turtle()</code>
+    ~%50% <code>turtle \= turtle.Turtle()</code>
+}
+
+$CATEGORY: Basic-JavaScript
+
+// Function syntax.
+::Declaring Functions:: Which are valid ways of declaring functions in JavaScript?
+{
+    ~%-33.33333% <code>pass() \= \{ console.log("PASSED!") \}</code>
+    ~%33.33333% <code>function() \{ console.log("PASSED!") \}</code>
+    ~%33.33333% <code>function pass() \{ console.log("PASSED!") \}</code>
+    ~%33.33333% <code>() \=> console.log("PASSED!")</code>
+}
+
+::Boolean Logic:: In JavaScript, what variable type is represented by boolean logic?
+{
+    ~%50% truth — <code>true</code> or <code>false</code>
+    ~%-50% questions — <code>maybe</code> or <code>sometimes</code>
+    ~%50% binary answers — <code>yes</code> or <code>no</code>
+    ~%-50% ordinal numbers
+}
+
+$CATEGORY: P5.js
+
+$CATEGORY: Concepts
+
+::Recursion:: A recursive system is one where:
+{
+    = The system contains or refers to itself
+    ~ The system contains repeated or iterated elements
+    ~ The system contains rotated elements
+}
