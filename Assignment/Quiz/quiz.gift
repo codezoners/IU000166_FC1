@@ -1,18 +1,22 @@
 $CATEGORY: Basic-Python
 
-::Syntax 1:: Python is sensitive to indentation of statements. {T}
+::PSyntax 1:: Python is sensitive to indentation of statements. {T}
 
-::Syntax 2:: Python statements have to be terminated with a semicolon. {F}
+::PSyntax 2:: Python statements have to be terminated with a semicolon. {F}
 
-::Syntax 3:: Python statements can be terminated with a semicolon. {T}
+::PSyntax 3:: Python statements can be terminated with a semicolon. {T}
 
 ::Conditionals:: Which of these keywords can occur in a Python conditional statement?
 {
     ~%33.33333% <code>if</code>
-    ~%33.33333% <code>else<code>
+    ~%33.33333% <code>else</code>
     ~%-33.33333% <code>elseif</code>
     ~%33.33333% <code>elif</code>
 }
+
+::Case:: Python is case-sensitive (i.e. upper-case and lower-case letters are distinct). {T}
+
+::Browser:: Python can run directly inside web browsers. {F}
 
 $CATEGORY: Turtle-Graphics
 
@@ -25,15 +29,27 @@ which of these statements will create a turtle object?
     ~%50% <code>turtle \= turtle.Turtle()</code>
 }
 
+::ColourSpec:: Which of these ways to specify a colour is valid?
+{
+    ~%33.33333% <code>t.color("black")</code>
+    ~%33.33333% <code>t.color("\#FF8000")</code>
+    ~%33.33333% <code>t.color(255, 0, 255)</code>
+    ~%-33.33333% <code>t.color(black)</code>
+}
+
 $CATEGORY: Basic-JavaScript
 
+::Case:: JavaScript is case-sensitive (i.e. upper-case and lower-case letters are distinct). {T}
+
+::Browser:: JavaScript can run directly inside web browsers. {T}
+
 // Function syntax.
-::Declaring Functions:: Which are valid ways of declaring functions in JavaScript?
+::Declaring Functions:: Which are valid ways of creating functions in JavaScript?
 {
     ~%-33.33333% <code>pass() \= \{ console.log("PASSED!") \}</code>
     ~%33.33333% <code>function() \{ console.log("PASSED!") \}</code>
     ~%33.33333% <code>function pass() \{ console.log("PASSED!") \}</code>
-    ~%33.33333% <code>() \=> console.log("PASSED!")</code>
+    ~%33.33333% <code>() \=&gt; console.log("PASSED!")</code>
 }
 
 ::Boolean Logic:: In JavaScript, what variable type is represented by boolean logic?
@@ -44,13 +60,61 @@ $CATEGORY: Basic-JavaScript
     ~%-50% ordinal numbers
 }
 
+::Declarations:: Which of these declarations is <strong>not</strong> valid JavaScript?
+{
+    ~ <code>const x \= 10</code>
+    ~ <code>var x \= 10</code>
+    = <code>int x \= 10</code>
+    ~ <code>let x \= 10</code>
+}
+
+::JSyntax 1:: Indentation is important to the meaning of JavaScript programs. {F}
+
 $CATEGORY: P5.js
 
-$CATEGORY: Concepts
+::Entry Points:: The main functions in a P5.js sketch are:
+{
+    = <code>setup()</code> and <code>draw()</code>
+    ~ <code>setup()</code> and <code>loop()</code>
+    ~ <code>init()</code> and <code>draw()</code>
+    ~ <code>init()</code> and <code>loop()</code>
+}
+
+::Printing:: Text can be printed to the P5 console with:
+{
+    ~%50% <code>console.log(...text...)</code>
+    ~%50% <code>print(...text...)</code>
+    ~%-50% <code>output(...text...)</code>
+    ~%-50% <code>text(...text...)</code>
+}
+
+::Fill:: The fill colour for objects in P5.js is set with:
+{
+    = <code>fill(r, g, b)</code>
+    ~ <code>color(r, g, b)</code>
+    ~ <code>fillcolor(r, g, b)</code>
+}
+
+::Transforms:: Which of these is <strong>not</strong> a valid P5.js transformation?
+{
+    = <code>flatten</code>
+    ~ <code>scale</code>
+    ~ <code>rotate</code>
+    ~ <code>translate</code>
+}
+
+$CATEGORY: Basic-Concepts
 
 ::Recursion:: A recursive system is one where:
 {
     = The system contains or refers to itself
     ~ The system contains repeated or iterated elements
     ~ The system contains rotated elements
+}
+
+::RecursionUse:: Recursion is usually achieved in programs using:
+{
+    = functions
+    ~ conditional statements
+    ~ loops
 }
