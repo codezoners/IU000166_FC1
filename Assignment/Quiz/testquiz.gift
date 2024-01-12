@@ -1,7 +1,7 @@
 $CATEGORY: TestCategory
 
 // true/false
-::Q1:: 1+1=2 {T}
+::Q1:: 1+1\=2 {T}
 
 // multiple choice with specified feedback for right and wrong answers
 ::Q2:: What's between orange and green in the spectrum?
