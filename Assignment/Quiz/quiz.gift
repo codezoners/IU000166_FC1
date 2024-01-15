@@ -26,7 +26,7 @@ which of these statements will create a turtle object?
     ~%50% <code>t \= turtle.Turtle()</code>
     ~%-50% <code>t \= Turtle()</code>
     ~%-50% <code>t \= turtle()</code>
-    ~%50% <code>turtle \= turtle.Turtle()</code>
+    ~%-50% <code>t \= turtle.Turtle</code>
 }
 
 ::ColourSpec:: Which of these ways to specify a colour is valid?
